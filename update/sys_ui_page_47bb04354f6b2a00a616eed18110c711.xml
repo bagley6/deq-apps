@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_soud2_deq_check_receipt.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<style>
+td {
+	padding: 10px;
+}
+.titleBar {
+	border: 1px solid black;
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+	
+}
+
+p {
+    display: block;
+    margin-bottom: 2px;
+    font-size:18px;
+	font-weight: bold;
+    line-height: 20px;
+}
+
+</style>
+<table>
+	<tbody>
+		<tr>
+			<td colspan="4" class="titleBar">
+				<p class="title">State of Utah</p>
+				<p>Department of Environmental</p>
+				<p>Quality</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Receipt
+			</td>
+			<td>
+				Tuesday December 6, 2016 11:15:53 AM
+			</td>
+			<td>
+				Receipt Number
+			</td>
+			<td>
+				EDO0000000000002
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Amount:
+			</td>
+			<td>
+				$5.00
+			</td>
+			<td>
+				Check #:
+			</td>
+			<td>
+				333
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Payment method:
+			</td>
+			<td>
+				Check
+			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				For:
+			</td>
+			<td colspan="3">
+				test
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+				bpathakis
+			</td>
+			<td colspan="2">
+				___________________________________
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+	<button class="printButton" onClick="window.print()">Print</button>
+	
+</j:jelly>]]></html>
+        <name>receipt</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2016-12-07 20:56:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>47bb04354f6b2a00a616eed18110c711</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>receipt</sys_name>
+        <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+        <sys_update_name>sys_ui_page_47bb04354f6b2a00a616eed18110c711</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2016-12-07 21:51:28</sys_updated_on>
+    </sys_ui_page>
+</record_update>

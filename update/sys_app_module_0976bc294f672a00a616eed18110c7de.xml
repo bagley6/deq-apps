@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="DEQ Administration">927817654f2b2a00a616eed18110c708</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>DEQ Activities</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_soud2_deq_check_deq_activity</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_soud2_deq_check.user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-12-07 05:20:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>0976bc294f672a00a616eed18110c7de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>DEQ Activities</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+        <sys_update_name>sys_app_module_0976bc294f672a00a616eed18110c7de</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-12-07 17:42:23</sys_updated_on>
+        <timeline_page/>
+        <title>DEQ Activities</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

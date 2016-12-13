@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="fe4767a94f2b2a00a616eed18110c7c8" sys_domain="global" table="x_soud2_deq_check_recorder_table" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 18:12:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>764767a94f2b2a00a616eed18110c7c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_soud2_deq_check_recorder_table" name="x_soud2_deq_check_recorder_table" sys_domain="global" view="Default view">fe4767a94f2b2a00a616eed18110c7c8</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_recorder_table" sys_domain="global" view="Default view">2e0af68c4fafa600a616eed18110c791</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 18:12:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_soud2_deq_check_recorder_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 18:12:43</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>fe4767a94f2b2a00a616eed18110c7c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_soud2_deq_check_recorder_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+            <sys_update_name>sys_ui_form_sections_fe4767a94f2b2a00a616eed18110c7c8</sys_update_name>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 18:12:43</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

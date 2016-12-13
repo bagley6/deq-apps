@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="DEQ Check Amounts" max_length="40" name="x_soud2_deq_check_deq_check_amounts" type="collection">
+        <element label="Activity" max_length="32" name="activity" reference="x_soud2_deq_check_deq_activity" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Amount" max_length="40" name="amount" type="currency"/>
+        <element attributes="scale=2" label="Amount" max_length="20" name="amounts" type="decimal"/>
+        <element label="Finet Code" max_length="32" name="finet_code" reference="x_soud2_deq_check_deq_finet_activity_codes" type="reference"/>
+        <element label="Invoice Number" max_length="10" name="invoice_number" type="string"/>
+        <element label="Logging" max_length="32" name="logging" reference="x_soud2_deq_check_recorder_table" type="reference"/>
+        <element label="Permit Number" max_length="10" name="permit_number" type="string"/>
+        <element label="Revenue Code" max_length="4" name="revenue_code" type="string"/>
+        <index name="index">
+            <element name="activity"/>
+        </index>
+        <index name="index2">
+            <element name="finet_code"/>
+        </index>
+        <index name="index3">
+            <element name="logging"/>
+        </index>
+    </element>
+</database>

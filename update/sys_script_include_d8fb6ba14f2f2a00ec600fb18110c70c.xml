@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_soud2_deq_check.DEQCheckForm</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DEQCheckForm</name>
+        <script><![CDATA[/**
+ * DEQCheckForm would be to extend GeneralForm and then override all of the methods in the extension.
+ * 
+ * @author SERVICE-NOW\Syed.Faheem
+ */
+var DEQCheckForm = Class.create();
+/**
+ * Utility to preview the form
+ * @param sysId {String} of GlideRecord
+ */
+DEQCheckForm.preview = function(sysId, sourceTable, templateTable, template, generalDebug) {
+    // check whether the user profile exists. If not, do not generate PDF letter
+	if (!DEQCheckForm.checkUserProfileExistance(sysId)){
+		gs.addErrorMessage(gs.getMessage(template+ " won't be generated without a user profile.", ''));
+		return;
+	}	
+	
+   // check whether incident notification letter template exists. If not, do not generate PDF letter
+	if (!DEQCheckForm.checkLetterTemplateExistance()){
+		gs.addErrorMessage(gs.getMessage("Please create "+ template + " template at first.", ''));
+		return;
+	}
+	
+	var generalForm = new DEQCheckForm({
+		tableId : (sysId) ? sysId : null,
+		generalDebug : (generalDebug) ? generalDebug : null,
+		mode : 'preview',
+		sourceTable : sourceTable,		
+		templateTable : templateTable,
+		template : template,
+	});
+	generalForm.start();
+	generalForm.preview();
+};
+/**
+ * Utility to create a PDF for the form
+ * @param sysId {String} of GlideRecord
+ */
+DEQCheckForm.generate = function(sysId, sourceTable, templateTable, template, generalDebug) {
+gs.log('sysId '+ sysId+ ' sourceTable ' +sourceTable + ' templateTable ' + templateTable +' template ' +template + ' generalDebug '+ generalDebug);
+	
+    // check whether the user profile exists. If not, do not generate PDF letter
+	if (!DEQCheckForm.checkUserProfileExistance(sysId,sourceTable)){
+		gs.addErrorMessage(gs.getMessage(template+ " won't be generated without a user profile.", ''));
+		return;
+	}
+	
+    // check whether incident notification letter template exists. If not, do not generate PDF letter
+	if (!DEQCheckForm.checkLetterTemplateExistance(templateTable, template)){
+		gs.addErrorMessage(gs.getMessage("Please create "+ template + " template at first.", ''));
+		return;
+	}	
+	
+	var generalHRForm = new DEQCheckForm({
+		tableId : (sysId) ? sysId : null,
+		generalDebug : (generalDebug) ? generalDebug : null,
+		mode : 'pdf',
+		sourceTable : sourceTable,		
+		templateTable : templateTable,
+		template : template,
+	});
+	
+	generalHRForm.start();
+	generalHRForm.createPDF();
+};
+
+DEQCheckForm.checkUserProfileExistance = function(sysId,sourceTable) {
+        var gr = new GlideRecord(sourceTable);
+		gr.get(sysId);
+	
+		if (gr.caller_id.isNil())
+			return false;
+
+	    return true;
+};
+
+
+DEQCheckForm.checkLetterTemplateExistance = function(templateTable, template) {
+        var gr = new GlideRecord(templateTable);
+        gr.addQuery('name', template);
+        gr.query();
+		if (gr.next())
+			return true;
+
+	    return false;
+};
+
+var generalHRForm = {
+	initialize : function() {
+		GeneralForm.prototype.initialize.apply(this, arguments);
+		
+		// Set the table
+		this.tableName = this.sourceTable;
+		
+		var instance = gs.getProperty('glide.servlet.uri');
+		
+		// param1 : doc temple table
+		// param2 : doc type
+		this._getDocTempleInfo(this.templateTable, this.template, instance);
+		
+		// Set the theme
+		//this.themeId = 'base';
+	},
+	
+	_getDocTempleInfo : function(tableName, docType, instance){
+	
+		var gr = new GlideRecord(tableName);
+		gr.addQuery('name', docType);
+		gr.query();
+		if (gr.next()){
+			this.headerImage = gr.header.getDisplayValue() ? instance + gr.header.getDisplayValue() : '';
+			this.footerImage = gr.footer.getDisplayValue() ? instance + gr.footer.getDisplayValue() : '';
+			this.footnote    = gr.footnote + '';
+			this.headerPosition = gr.header_position + '';
+			this.footerPosition = gr.footer_position + '';
+			this.pageSize       = gr.page_size  + '';
+			this.body           = this.parseBody(gr.body + '', instance);
+			// setting filename
+			this.fileName = 'Incident Notification Letter ('+ current.number + ').pdf'; 
+		}
+	},	
+	
+	parseBody : function(docBody, instance){
+
+		var parsedBody = docBody;
+		var gr = new GlideRecord(this.tableName);
+		gr.get(this.tableId);
+		
+		var date = gs.now();
+		parsedBody = parsedBody.replace(/\$\{date\}/gi, date);
+		parsedBody = parsedBody.replace(/\$\{letterid\}/gi, this.letterid);
+		
+		// parsing of variables dynamically
+		var sampleString=docBody.toString();
+		var reg = new SNC.Regex('/\\$\\{(.*?)\\}/i');
+		var match = reg.match(sampleString);
+		var count =0;
+		var variables = [];
+		var values = [];
+		var tmpValue;
+		while (match != null) {
+			variables.push(match.toString().substring(match.toString().indexOf(',')+1));
+			match = reg.match();
+			
+			values.push(variables[count]);
+
+			if(gr.getDisplayValue(values[count])==null || JSUtil.nil(gr.getDisplayValue(values[count]))){
+				tmpValue='';
+			}
+			else
+				{
+				tmpValue=gr.getDisplayValue(values[count]);
+				
+			}
+			parsedBody = parsedBody.replace('${'+variables[count]+'}', tmpValue);
+			count++;
+		}
+		
+		// convert to the right image path
+		parsedBody = parsedBody.replace(/\/sys_attachment.do\?sys_id=(\w{32})/gi, '/$1.iix');
+		parsedBody = parsedBody.replace(/\/sys_attachment.do\?sys_id&#61;(\w{32})/gi, '/$1.iix');
+		parsedBody = parsedBody.replace(/src="\//gi, 'src="' + instance);
+		
+		return parsedBody;
+	},		
+
+	_setDocument : function() {
+		if (this.setDocument) {
+			this.setDocument();
+		} else {
+		
+			// This object allows us to control the properties for the Document,
+			// size, margins etc.
+			var pdfDoc = new GeneralPDF.Document(null, null, null, null, this.pageSize, this.headerImage);
+			//
+			// When possible all changes to the PDF Document objects
+			// should be done here, outside of the base object.
+			// Anything along the lines of properties on the PDF Document
+			// object.
+			//			
+			// Set page size
+			// pdfDoc.setPageSize();
+			//
+			// Set rotation (landscape/portrait)
+			// pdfDoc.setRotation();
+			//
+			// Set author
+			// pdfDoc.setAuthor();
+			//
+			// Set margins
+			// pdfDoc.setMargins();
+
+			// This object contains many options for creating PDFs in different ways.
+			this.document = new GeneralPDF(pdfDoc);
+			
+			// When possible all changes to the PDF Document object
+			// should be done here, outside of the base object.
+			//
+			// Examples include setting things here such as page break events,
+			// header, footer, styleSheets. Anything along the lines of
+			// writing the PDF file.
+			//
+			// Set page break events
+			//this.document.setPageBreakEvent();
+			//
+
+			// set header, footer, footnote, header position, footer position, page size
+			this.document.setDocTempleInfo(this.headerImage, this.footerImage, this.footnote, this.headerPosition, this.footerPosition, this.pageSize);		
+			
+			// Set iTextPdf CSS StyleSheet
+			// this.document.setStyleSheet();
+
+			// Creates a new document open for writing then we will parse HTML
+			// and add it to the document. This allows us to control things such
+			// as
+			// page break based on a certain GeneralFormDemoElement type as one
+			// example.
+			// It also helps improve PDF creation performance because small
+			// blocks
+			// of HTML tables are added for each element in the form versus
+			// creating
+			// a single huge table and adding that to the document one time.
+			this.document.startHTMLParser();
+			
+			this.document.addHTML(this.body);	
+			
+			this.debug.write();
+		}
+	},
+	
+	
+
+	type : 'DEQCheckForm'
+};
+DEQCheckForm.prototype = Object.extendsObject(GeneralForm, generalHRForm);]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>chuck.tomasi</sys_created_by>
+        <sys_created_on>2016-12-07 18:34:40</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d8fb6ba14f2f2a00ec600fb18110c70c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DEQCheckForm</sys_name>
+        <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+        <sys_update_name>sys_script_include_d8fb6ba14f2f2a00ec600fb18110c70c</sys_update_name>
+        <sys_updated_by>chuck.tomasi</sys_updated_by>
+        <sys_updated_on>2016-12-07 18:34:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

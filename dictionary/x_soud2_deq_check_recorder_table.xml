@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="DEQ Check Logging" max_length="40" name="x_soud2_deq_check_recorder_table" type="collection">
+        <element default="0" label="Amount" mandatory="true" max_length="40" name="amount" type="currency"/>
+        <element label="Batch #" max_length="20" name="batch" type="integer"/>
+        <element label="Check Date" max_length="40" name="check_date" type="glide_date"/>
+        <element label="Check Number" mandatory="true" max_length="10" name="check_number" type="string"/>
+        <element choice="1" label="Delivery Method" max_length="40" name="delivery_method" type="choice">
+            <choice>
+                <element label="U.S. Mail" sequence="0" value="mail"/>
+            </choice>
+        </element>
+        <element label="Finet Activity" max_length="32" name="finet_activity" reference="x_soud2_deq_check_deq_finet_activity_codes" type="reference"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" type="string"/>
+        <element choice="3" label="Payment Method" max_length="40" name="payment_method" type="choice">
+            <choice>
+                <element label="Check" sequence="0" value="check"/>
+            </choice>
+        </element>
+        <element label="From" mandatory="true" max_length="32" name="payor" reference="core_company" type="reference"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Subject" max_length="255" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Payee" mandatory="true" max_length="80" name="u_string_2" type="string"/>
+        <index name="index">
+            <element name="payor"/>
+        </index>
+        <index name="index2">
+            <element name="finet_activity"/>
+        </index>
+    </element>
+</database>

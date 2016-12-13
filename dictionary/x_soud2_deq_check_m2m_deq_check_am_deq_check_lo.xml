@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Deq Check M2m Deq Check Am Deq Check Lo" max_length="40" name="x_soud2_deq_check_m2m_deq_check_am_deq_check_lo" type="collection">
+        <element label="DEQ Check Amounts" max_length="32" name="deq_check_amounts" reference="x_soud2_deq_check_deq_check_amounts" type="reference"/>
+        <element label="Deq Check Logging" max_length="32" name="deq_check_logging" reference="x_soud2_deq_check_recorder_table" type="reference"/>
+        <index name="index">
+            <element name="deq_check_amounts"/>
+        </index>
+        <index name="index2">
+            <element name="deq_check_logging"/>
+        </index>
+    </element>
+</database>

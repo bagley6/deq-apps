@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Document Template" max_length="40" name="x_soud2_deq_check_document_template" type="collection">
+        <element default="true" label="Body" max_length="40" name="body" type="boolean"/>
+        <element label="Footer" max_length="40" name="footer" type="user_image"/>
+        <element choice="1" label="Footer position" max_length="40" name="footer_position" type="choice">
+            <choice/>
+        </element>
+        <element label="Footnote" max_length="60" name="footnote" type="string"/>
+        <element label="Header" max_length="40" name="header" type="user_image"/>
+        <element choice="1" label="Header position" max_length="40" name="header_position" type="choice">
+            <choice/>
+        </element>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element choice="1" default="Letter" label="Page size" max_length="40" name="page_size" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="appropriation" table="x_soud2_deq_check_deq_activity" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appropriation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NAA</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_deq_activity</name>
+            <sequence>0</sequence>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-08 18:19:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>0862b4c64f636a00ec600fb18110c72a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-08 18:21:25</sys_updated_on>
+            <value>naa</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appropriation</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>QQR</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_deq_activity</name>
+            <sequence>1</sequence>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-08 18:19:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d76274c64f636a00ec600fb18110c7fd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-08 18:21:25</sys_updated_on>
+            <value>qqr</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>appropriation</element>
+            <name>x_soud2_deq_check_deq_activity</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-08 18:19:23</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8262f0c64f636a00ec600fb18110c78f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>appropriation</sys_name>
+            <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+            <sys_update_name>sys_choice_x_soud2_deq_check_deq_activity_appropriation</sys_update_name>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-08 18:19:40</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

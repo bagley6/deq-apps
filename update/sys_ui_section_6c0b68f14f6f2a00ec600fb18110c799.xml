@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="6c0b68f14f6f2a00ec600fb18110c799" sys_domain="global" table="x_soud2_deq_check_deq_check_amounts" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amounts</element>
+            <position>0</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>74db6cf14f6f2a00ec600fb18110c7c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity</element>
+            <position>1</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>f4db6cf14f6f2a00ec600fb18110c7c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>finet_code</element>
+            <position>2</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>78db6cf14f6f2a00ec600fb18110c7c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>revenue_code</element>
+            <position>3</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>f8db6cf14f6f2a00ec600fb18110c7c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>7cdb6cf14f6f2a00ec600fb18110c7c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_number</element>
+            <position>5</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>fcdb6cf14f6f2a00ec600fb18110c7c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>permit_number</element>
+            <position>6</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>70db6cf14f6f2a00ec600fb18110c7c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>logging</element>
+            <position>7</position>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:12:08</sys_created_on>
+            <sys_id>f0db6cf14f6f2a00ec600fb18110c7c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_soud2_deq_check_deq_check_amounts" sys_domain="global" view="Default view">6c0b68f14f6f2a00ec600fb18110c799</sys_ui_section>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:12:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_soud2_deq_check_deq_check_amounts</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 23:08:34</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>6c0b68f14f6f2a00ec600fb18110c799</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_soud2_deq_check_deq_check_amounts</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+            <sys_update_name>sys_ui_section_6c0b68f14f6f2a00ec600fb18110c799</sys_update_name>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 23:08:34</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

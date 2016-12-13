@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="division" table="x_soud2_deq_check_deq_finet_activity_codes" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>division</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DAQ</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_deq_finet_activity_codes</name>
+            <sequence>0</sequence>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 05:08:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>85b330294f672a00a616eed18110c70f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 05:11:43</sys_updated_on>
+            <value>DAQ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>division</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DERR</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_deq_finet_activity_codes</name>
+            <sequence>1</sequence>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 05:08:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d4d330294f672a00a616eed18110c7cf</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 05:11:43</sys_updated_on>
+            <value>DERR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>division</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DWMRC</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_deq_finet_activity_codes</name>
+            <sequence>2</sequence>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 05:08:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cdc3fce54f672a00a616eed18110c7db</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 05:11:43</sys_updated_on>
+            <value>DWMRC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>division</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DWQ</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_deq_finet_activity_codes</name>
+            <sequence>3</sequence>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 05:08:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>6da330294f672a00a616eed18110c70b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 05:11:43</sys_updated_on>
+            <value>DWQ</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>division</element>
+            <name>x_soud2_deq_check_deq_finet_activity_codes</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 05:08:01</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c8b3fce54f672a00a616eed18110c779</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>division</sys_name>
+            <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+            <sys_update_name>sys_choice_x_soud2_deq_check_deq_finet_activity_codes_division</sys_update_name>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 05:08:43</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

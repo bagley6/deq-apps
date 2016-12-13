@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="DEQ Finet Activity Codes" max_length="40" name="x_soud2_deq_check_deq_finet_activity_codes" type="collection">
+        <element label="Account Code" mandatory="true" max_length="4" name="account_code" type="string"/>
+        <element display="true" label="Account Name" mandatory="true" max_length="100" name="account_name" type="string"/>
+        <element label="Account Short Name" mandatory="true" max_length="40" name="account_short_name" type="string"/>
+        <element choice="1" label="Division" max_length="40" name="division" type="choice">
+            <choice>
+                <element label="DAQ" sequence="0" value="DAQ"/>
+                <element label="DERR" sequence="1" value="DERR"/>
+                <element label="DWMRC" sequence="2" value="DWMRC"/>
+                <element label="DWQ" sequence="3" value="DWQ"/>
+            </choice>
+        </element>
+    </element>
+</database>

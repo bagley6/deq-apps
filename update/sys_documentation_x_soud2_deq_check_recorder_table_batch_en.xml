@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="batch" label="Batch #" language="en" table="x_soud2_deq_check_recorder_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>batch</element>
+            <help/>
+            <hint/>
+            <label>Batch #</label>
+            <language>en</language>
+            <name>x_soud2_deq_check_recorder_table</name>
+            <plural>Batch #s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2016-12-07 04:51:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9fdfac654f672a00a616eed18110c7c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Batch #</sys_name>
+            <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+            <sys_update_name>sys_documentation_x_soud2_deq_check_recorder_table_batch_en</sys_update_name>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2016-12-07 04:51:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <name>x_soud2_deq_check_deq_finet_activity_codes</name>
+        <owner_condition table="x_soud2_deq_check_deq_finet_activity_codes">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </owner_condition>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-12-07 05:04:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c7f2f4e54f672a00a616eed18110c7de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_soud2_deq_check_deq_finet_activity_codes</sys_name>
+        <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+        <sys_update_name>ua_table_licensing_config_c7f2f4e54f672a00a616eed18110c7de</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-12-07 05:04:56</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>
