@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_soud2_deq_check_recorder_table" version="2" view="rpt-tempx_soud2_deq_check_recorder_tabledoug.bagley">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>payor</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>cfbd2ec74f2cba00a616eed18110c790</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>amount</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>43bd2ec74f2cba00a616eed18110c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>check_number</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>c3bd2ec74f2cba00a616eed18110c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>47bd2ec74f2cba00a616eed18110c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>c7bd2ec74f2cba00a616eed18110c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>4bbd2ec74f2cba00a616eed18110c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>payment_method</element>
+            <list_id display_value="x_soud2_deq_check_recorder_table" element="NULL" name="x_soud2_deq_check_recorder_table" parent="NULL" relationship="NULL" sys_domain="global" view="07bd2ec74f2cba00a616eed18110c790">8bbd2ec74f2cba00a616eed18110c790</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_id>cbbd2ec74f2cba00a616eed18110c791</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_soud2_deq_check_recorder_table</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>doug.bagley</sys_created_by>
+            <sys_created_on>2017-01-30 22:54:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>8bbd2ec74f2cba00a616eed18110c790</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>doug.bagley</sys_updated_by>
+            <sys_updated_on>2017-01-30 22:54:55</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt-tempx_soud2_deq_check_recorder_tabledoug.bagley" name="rpt-tempx_soud2_deq_check_recorder_tabledoug.bagley">07bd2ec74f2cba00a616eed18110c790</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

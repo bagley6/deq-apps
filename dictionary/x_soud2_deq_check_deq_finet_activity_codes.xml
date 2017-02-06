@@ -12,5 +12,9 @@
                 <element label="DWQ" sequence="3" value="DWQ"/>
             </choice>
         </element>
+        <element label="Revenue Code" max_length="32" name="u_reference_1" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="u_reference_1"/>
+        </index>
     </element>
 </database>

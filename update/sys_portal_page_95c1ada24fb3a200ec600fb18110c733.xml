@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2017-02-06 22:16:57">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_2_across">f6defafa0a0a0b12000d5016bd12ff06</layout>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-12-22 21:18:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>95c1ada24fb3a200ec600fb18110c733</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_daf</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+        <sys_update_name>sys_portal_page_95c1ada24fb3a200ec600fb18110c733</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-12-22 21:18:59</sys_updated_on>
+        <title>catalog_daf</title>
+        <user/>
+        <view>catalog_daf</view>
+    </sys_portal_page>
+</record_update>

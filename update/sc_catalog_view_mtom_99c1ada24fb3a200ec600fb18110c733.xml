@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="DAF">c041a1e24fb3a200ec600fb18110c71a</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>doug.bagley</sys_created_by>
+        <sys_created_on>2016-12-22 21:18:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>99c1ada24fb3a200ec600fb18110c733</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DAF.catalog_daf</sys_name>
+        <sys_package display_value="DEQ Check Logging" source="x_soud2_deq_check">3ae16ac44fafa600a616eed18110c770</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_daf">95c1ada24fb3a200ec600fb18110c733</sys_portal_page>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="DEQ Check Logging">3ae16ac44fafa600a616eed18110c770</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_99c1ada24fb3a200ec600fb18110c733</sys_update_name>
+        <sys_updated_by>doug.bagley</sys_updated_by>
+        <sys_updated_on>2016-12-22 21:18:59</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>
